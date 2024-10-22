@@ -4,6 +4,9 @@
     --branco-texto-secundario: #F9F9F9;
     --cinza-texto-rodape: #C0C0C0;
     --azul-botao: #167BF7;
+    --azul-botao-hover: #398aee;
+    --botao-secundario-hover: #ffffff5a;
+
 
     --fonte-padrao: "Inter", sans-serif;
 }
@@ -72,8 +75,13 @@ body {
     align-items: center;
     margin: 0 10rem;
 }
+
 .secundario__imagem {
     width: 70%;
+}
+
+.container__descricao {
+    padding: 0 4.5rem;
 }
 
 .descricao__titulo {
@@ -87,3 +95,63 @@ body {
     color:  var(--branco-texto-secundario);
 }
 
+.botao__terciario {
+    display: inline-block;
+    margin-top: 1rem;    
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+   font-size: 3rem;
+}
+
+.dispositivos__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content:center;
+    margin: 3.5rem 0;
+}
+
+.lista__item {
+    font-size: 2rem;
+}
+
+.rodape {
+    text-align: center;
+    margin: 3em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-texto-primario);
+    padding: 0.5rem;
+}
+
+.rodape__texto {
+    margin: 1em 0em;
+    font-size: 14px;
+    color: var(--cinza-texto-rodape)
+}
+
+.lista__link a:hover {
+        color: var(--azul-botao-hover);
+}
+
+.container__botao:hover {
+    background-color: var(--azul-botao-hover);
+}
+
+.botao_secundario:hover {
+    background-color: var(--botao-secundario-hover);
+}
